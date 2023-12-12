@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="box-container">
+        <div class="title">
+            Uberaba - MG
+        </div>
+        <div class="box_info">
+                <div class="info">
+                <div>
+                    Umidade do Solo
+                </div>
+                <div class="vlr">
+                    {{ground_humidity}}%
+                </div>
+            </div>
+            <div class="info">
+                <div>
+                    Temperatura
+                </div>
+                <div class="vlr">
+                    {{temp}}°
+                </div>
+            </div>
+            <div class="info">
+                <div>
+                    Umidade do Ar
+                </div>
+                <div class="vlr">
+                    {{humidity}}%
+                </div>
+            </div>
+            <div class="info">
+                <div>
+                    Estado do Céu
+                </div>
+                <div class="vlr">
+                    {{sky}}
+                </div>
+            </div>
+        </div>
+        <div>
+            <button [ngClass]="{'off':!isRegando, 'on':isRegando}">{{valv}}</button>
+        </div>
+    </div>
+</div>
+
